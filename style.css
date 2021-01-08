@@ -1,0 +1,216 @@
+    body {
+      font-family: poppins, 'sans serif';
+    }
+
+    .btn {
+      display: block;
+      background-color: #648fff;
+      color: #fff;
+      padding: 20px;
+      border-radius: 100px;
+      margin-top: 25px;
+      font-size: 1.2rem;
+      font-weight: bolder;
+      letter-spacing: 2px;
+    }
+
+    .navhead{
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    a,input,button {
+      display: block;
+      text-decoration: none;
+    }
+    a{
+      font-weight: bolder;
+      letter-spacing: 2px;
+    }
+
+    i {
+      margin-left: 19%;
+      position: relative;
+      bottom: -45px;
+    }
+
+    input,button {
+      border: none;
+      outline: none;
+      padding: 20px;
+      padding-left: 60px;
+      border-radius: 50px;
+      background-color: #eee;
+      width: 70%;
+      letter-spacing: 2px;
+    }
+    #logoutbtn{
+    	border: none;
+      	outline: none;
+      	border-radius: 50px;
+      	letter-spacing: 2px;
+      	padding: 10px;
+      	padding-left: 10px;
+      	background-color: #eee;
+      	width: 100%;
+    }
+
+    .error {
+      color: red;
+      text-decoration: none;
+      font-size: large;
+    }
+
+    .forgot {
+      margin-top: 1vh;
+      margin-bottom: 3vh;
+      color: #ddd;
+    }
+    .forgot:hover{
+      color: #648fff
+    }
+
+    img {
+      z-index: -1;
+      width: 60%;
+      margin-top: 25vh;
+    }
+
+    .nv {
+      padding: 20px;
+      font-weight: bolder;
+      letter-spacing: 2px;
+    }
+
+    .nav-svg {
+      margin-top: 0px;
+      height: 4vh;
+      padding: 0px;
+      width: auto;
+    }
+
+    @media screen and (max-width: 992px) {
+      .svgdiv {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      input,button{
+        padding-left: 50px;
+        width: 80%;
+      }
+      i{
+        margin-left: 14%;
+      }
+      .navhead{
+        font-size: 1.2rem;
+      }
+      .nav-svg{
+        height: 5vh;
+      }
+    }
+    @media screen and (max-width: 342px) {
+      .nav-svg{
+        height: 4vh;
+      }
+      .navhead{
+        font-size: 0.8rem;
+      }
+      input,button{
+        padding-left: 50px;
+        width: 90%;
+      }
+
+    }
+
+    @keyframes move_wave {
+      0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+      }
+
+      50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+      }
+
+      100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+      }
+    }
+
+    .waveWrapper {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+
+    .waveWrapperInner {
+      position: absolute;
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      bottom: -1px;
+      background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+    }
+
+    .bgTop {
+      z-index: 15;
+      opacity: 0.5;
+    }
+
+    .bgMiddle {
+      z-index: 10;
+      opacity: 0.75;
+    }
+
+    .bgBottom {
+      z-index: 5;
+    }
+
+    .wave {
+      position: absolute;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background-repeat: repeat no-repeat;
+      background-position: 0 bottom;
+      transform-origin: center bottom;
+    }
+
+    .waveTop {
+      background-size: 50% 100px;
+    }
+
+    .waveAnimation .waveTop {
+      animation: move-wave 3s;
+      -webkit-animation: move-wave 3s;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+    }
+
+    .waveMiddle {
+      background-size: 50% 120px;
+    }
+
+    .waveAnimation .waveMiddle {
+      animation: move_wave 10s linear infinite;
+    }
+
+    .waveBottom {
+      background-size: 50% 100px;
+    }
+
+    .waveAnimation .waveBottom {
+      animation: move_wave 15s linear infinite;
+    }
+
+    .anim {
+      z-index: -1;
+    }
+    h4{
+      color: #fff;
+      letter-spacing: 2px;
+    }
